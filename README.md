@@ -12,7 +12,7 @@ Recipes:
 	Quicker Smelting of resources to empty the furnace
 	Craft Dyes with paint
 	Craft weapon Parts
-	Increase Repair kit recipe difficulty
+	Greatly increase Repair kit recipe difficulty
 	Slightly decrease recipe requirements for some items
 	Craft Acid, two recipies added
 	Craft Shotgun Slug Turret
@@ -31,7 +31,7 @@ Items:
 		5000 ammo
 		150 parts
 		10,000 resources, gas
-	Slightly increase food gained from eating most recipes
+	Very slightly increase food gained from eating
 	Chainsaw upgrade
 	Auger upgrade
 	Nailgun upgrade
@@ -48,7 +48,7 @@ Vehicles:
 	Decrease Minibike gas use
 
 WorldGlobal:
-	Increase inside lighting slightly
+	Remove Inside Darkening Effect
 
 Menu Window:
 	Added more options:
@@ -61,4 +61,4 @@ Menu Window:
 	Set Loot Respawn days to 999
 
 Ingame Window:
-	--Increased vehicle storage
+	Increased Vehicle storage to 90

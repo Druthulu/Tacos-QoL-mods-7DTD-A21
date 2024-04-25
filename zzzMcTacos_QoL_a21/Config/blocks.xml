@@ -6,7 +6,7 @@
 		<block name="shotgunTurretSlug">
 			<property name="Extends" value="autoTurret"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
+			<property name="Model" value="Entities/Traps/AutoTurret/autoTurretShotgunPrefab"/>
 			<property name="AmmoItem" value="ammoShotgunSlug"/> 
 			<property name="MaxDistance" value="10"/>
 			<property name="EntityDamage" value="102"/> 
@@ -15,15 +15,17 @@
 			<property name="RayCount" value="1"/>
 			<property name="BurstRoundCount" value="1"/>
 			<property name="BurstFireRate" value="0.61"/>
-			<property name="CooldownTime" value="2"/>
+			<property name="CooldownTime" value="1"/>
 			<property name="OvershootTime" value="0.8"/>
+			<property name="FallAsleepTime" value="10"/>
+			<property name="WakeUpTime" value="0.5"/>
 			<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
 			<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
 			<property name="FireSound" value="pump_shotgun_fire"/>
 			<property name="EconomicValue" value="2500"/>
+			<property name="TraderStageTemplate" value="electricTier3"/>
 			<property name="CustomIcon" value="shotgunTurret"/>
-			<property name="PickupJournalEntry" value="cameraTip"/>
-			<property name="UnlockedBy" value="perkAdvancedEngineering,shotgunTurretSchematic"/>
+			<property name="UnlockedBy" value="craftingTraps"/>
 		</block>
 	</append>
 </configs>

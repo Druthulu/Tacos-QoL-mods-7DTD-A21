@@ -1,7 +1,7 @@
 <configs>
 	<!-- More Glue Balance-->
-	<set xpath="/recipes/recipe[@name='resourceGlue']/@count">2</set>
-	<set xpath="/recipes/recipe[@name='resourceGlue']/ingredient[@name='resourceBone']/@count">2</set>
+	<set xpath="/recipes/recipe[@name='resourceGlue']/@count">4</set>
+	<set xpath="/recipes/recipe[@name='resourceGlue']/ingredient[@name='resourceBone']/@count">8</set>
 	<append xpath="/recipes/recipe[@name='resourceGlue']">
 		<ingredient name="resourcePotassiumNitratePowder" count="100" />
 	</append>
@@ -142,18 +142,18 @@
 	<set xpath="/recipes/recipe[@name='medicalAloeCream']/ingredient[@name='resourceCropAloeLeaf']/@count">3</set>
 	<append xpath="/recipes">
 		<!-- Craft Acid-->
-		<recipe name="resourceAcid" count="1" craft_time="300" >
+		<recipe name="resourceAcid" count="1" craft_time="300" craft_area="chemistryStation">
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="resourcePotassiumNitratePowder" count="100"/>
 			<ingredient name="foodRottingFlesh" count="3"/>
 			<ingredient name="resourceScrapLead" count="10"/>
 		</recipe>
-		<recipe name="resourceAcid" count="4" craft_time="4">
+		<recipe name="resourceAcid" count="4" craft_time="4" craft_area="workbench">
 			<ingredient name="drinkJarBoiledWater" count="4"/>
 			<ingredient name="carBattery" count="1"/>
 		</recipe>
 		<!-- Craft ShotgunSlug Turrent-->
-		<recipe name="shotgunTurretSlug" count="1" tags="perkAdvancedEngineering,learnable"> 
+		<recipe name="shotgunTurretSlug" count="1" craft_area="workbench" > 
 			<ingredient name="resourceForgedSteel" count="30"/>
 			<ingredient name="resourceScrapPolymers" count="69"/>
 			<ingredient name="resourceOil" count="7"/>
@@ -164,14 +164,14 @@
 			</effect_group>
 		</recipe>
 		<!-- Craft Solar-->
-		<recipe name="solarCell" count="1" craft_time="90" craft_area="chemistryStation" tags="chemStationCrafting,perkAdvancedEngineering">
+		<recipe name="solarCell" count="1" craft_time="90" craft_area="chemistryStation" >
 			<ingredient name="resourceBrokenGlass" count="100"/>
 			<ingredient name="resourceElectricParts" count="100"/>
 			<ingredient name="resourceAcid" count="1"/>
 			<ingredient name="resourceScrapLead" count="10"/>
 			<ingredient name="resourceDuctTape" count="4"/>
 		</recipe>
-		<recipe name="solarbank" count="1" craft_time="600" craft_area="workbench" tags="workbenchCrafting,perkAdvancedEngineering">
+		<recipe name="solarbank" count="1" craft_time="600" craft_area="workbench" >
 			<ingredient name="resourceForgedSteel" count="6"/>
 			<ingredient name="resourceNail" count="20"/>
 			<ingredient name="resourceClayLump" count="100"/>
@@ -179,11 +179,11 @@
 			<ingredient name="resourceDuctTape" count="4"/>
 		</recipe>
 		<!-- Craft Tacos-->
-		<recipe name="foodBeefTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+		<recipe name="foodBeefTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" >
 			<ingredient name="foodRawMeat" count="1"/>
 			<ingredient name="foodCornMeal" count="2"/>
 		</recipe>
-		<recipe name="foodChickenTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+		<recipe name="foodChickenTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" >
 			<ingredient name="foodRawMeat" count="1"/>
 			<ingredient name="foodCornMeal" count="2"/>
 		</recipe>

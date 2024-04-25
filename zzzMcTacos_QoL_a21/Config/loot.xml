@@ -1,4 +1,8 @@
 <configs>
-  <!--<set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">13,13</set>-->
-  <!--<set xpath="/lootcontainers/lootgroup[@name]/item[@name='resourceScrapPolymers']/@count">69</set>-->
+  <!-- Increased Vehicle Loot-->
+  <set xpath="/lootcontainers/lootcontainer[@name='vehicleBicycle']/@size">9,10</set>
+  <set xpath="/lootcontainers/lootcontainer[@name='vehicleMinibike']/@size">9,10</set>
+  <set xpath="/lootcontainers/lootcontainer[@name='vehicleMotorcycle']/@size">9,10</set>
+  <set xpath="/lootcontainers/lootcontainer[@name='vehicle4x4Truck']/@size">9,10</set>
+  <set xpath="/lootcontainers/lootcontainer[@name='vehicleGyrocopter']/@size">9,10</set>
 </configs>
