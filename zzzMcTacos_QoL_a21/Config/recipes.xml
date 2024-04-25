@@ -1,0 +1,192 @@
+<configs>
+	<!-- More Glue Balance-->
+	<set xpath="/recipes/recipe[@name='resourceGlue']/@count">2</set>
+	<set xpath="/recipes/recipe[@name='resourceGlue']/ingredient[@name='resourceBone']/@count">2</set>
+	<append xpath="/recipes/recipe[@name='resourceGlue']">
+		<ingredient name="resourcePotassiumNitratePowder" count="100" />
+	</append>
+  	<!--  Quicker Smelting -->
+  	<set xpath="/recipes/recipe[@name='resourceClayLump']/@craft_time">0.01</set>
+  	<set xpath="/recipes/recipe[@name='resourceCrushedSand']/@craft_time">0.01</set>
+	<set xpath="/recipes/recipe[@name='resourceRockSmall']/@craft_time">0.01</set>
+	<set xpath="/recipes/recipe[@name='resourceScrapBrass']/@craft_time">0.01</set>
+	<set xpath="/recipes/recipe[@name='resourceScrapIron']/@craft_time">0.01</set>
+	<set xpath="/recipes/recipe[@name='resourceScrapLead']/@craft_time">0.01</set>
+
+  	<!-- Craft Dye's -->
+  	<append xpath="/recipes">
+	    <recipe name="modDyeRed" count="1">
+	      <ingredient name="resourcePaint" count="15" />
+	    </recipe>
+	    <recipe name="modDyeGreen" count="1">
+	      <ingredient name="resourcePaint" count="15" />
+	    </recipe>
+	    <recipe name="modDyeBlack" count="1">
+	      <ingredient name="resourcePaint" count="15" />
+	    </recipe>
+	    <recipe name="modDyeBlue" count="1">
+	      <ingredient name="resourcePaint" count="15" />
+	    </recipe>
+	    <recipe name="modDyeBrown" count="1">
+	      <ingredient name="resourcePaint" count="15" />
+	    </recipe>
+	    <recipe name="modDyePink" count="1">
+	      <ingredient name="resourcePaint" count="15" />
+	    </recipe>
+	    <recipe name="modDyePurple" count="1">
+	      <ingredient name="resourcePaint" count="15" />
+	    </recipe>
+	    <recipe name="modDyeYellow" count="1">
+	      <ingredient name="resourcePaint" count="15" />
+	    </recipe>
+	</append>
+  	<!-- Craft Parts -->
+	<append xpath="/recipes">
+		<recipe name="gunBowT1WoodenBowParts" count="1" craft_time="90">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceOil" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="69"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		<recipe name="gunHandgunT1PistolParts" count="1" craft_time="90">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceOil" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="69"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		<recipe name="gunShotgunT1DoubleBarrelParts" count="1" craft_time="90">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceOil" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="69"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		<recipe name="gunRifleT1HuntingRifleParts" count="1" craft_time="90">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceOil" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="69"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		<recipe name="gunMGT1AK47Parts" count="1" craft_time="90">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceOil" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="69"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		<recipe name="meleeToolAxeT3ChainsawParts" count="1" craft_time="90">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceOil" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="69"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		<recipe name="meleeWpnBladeT3MacheteParts" count="1" craft_time="90">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceOil" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="69"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		<recipe name="meleeWpnSpearT3SteelSpearParts" count="1" craft_time="90">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceOil" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="69"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		<!--<recipe name="meleeToolSalvageParts" count="1" craft_time="90">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceOil" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="69"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>-->
+		<recipe name="meleeToolAllSteelParts" count="1" craft_time="90">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceOil" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="69"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+	</append>
+	<!-- Increse Repair Kit difficutly -->
+	<set xpath="/recipes/recipe[@name='resourceRepairKit']/ingredient[@name='resourceForgedIron']/@count">5</set>
+	<set xpath="/recipes/recipe[@name='resourceRepairKit']/ingredient[@name='resourceDuctTape']/@count">2</set>
+	<set xpath="/recipes/recipe[@name='resourceRepairKit']/ingredient[@name='resourceForgedIron']/@name">resourceForgedSteel</set>
+	<append xpath="/recipes/recipe[@name='resourceRepairKit']">
+		<ingredient name="resourceOil" count="5" />
+		<ingredient name="meleeToolSalvageT1Wrench" count="1" />
+		<ingredient name="meleeToolRepairT1ClawHammer" count="1" />
+	</append>
+	<!-- Recipe QoL -->
+	<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">2</set>
+	<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodEgg']/@count">2</set>
+	<set xpath="/recipes/recipe[@name='resourceGlue']/ingredient[@name='resourceBone']/@count">2</set>
+	<set xpath="/recipes/recipe[@name='resourceGlue']/ingredient[@name='drinkJarBoiledWater']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='resourceDuctTape']/ingredient[@name='resourceGlue']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='resourceDuctTape']/ingredient[@name='resourceCloth']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='resourceOil']/ingredient[@name='resourceOilShale']/@count">5</set>
+	<!--<set xpath="/recipes/recipe[@name='resourceOil']/ingredient[@name='drinkCanEmpty']/@count">1</set>-->
+	<set xpath="/recipes/recipe[@name='resourcePaper']/@count">10</set>
+	<set xpath="/recipes/recipe[@name='resourcePaper']/ingredient[@name='resourceWood']/@count">10</set>
+	<set xpath="/recipes/recipe[@name='resourcePaper']/ingredient[@name='resourceGlue']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='resourcePaper']/ingredient[@name='drinkJarBoiledWater']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunShell']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunShell']/ingredient[@name='resourceBuckshot']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunShell']/ingredient[@name='resourceGunPowder']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunShell']/ingredient[@name='resourcePaper']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']/@count">10</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']/ingredient[@name='resourceBulletTip']/@count">10</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']/ingredient[@name='resourceGunPowder']/@count">30</set>
+	<set xpath="/recipes/recipe[@name='ammoShotgunSlug']/ingredient[@name='resourceScrapPolymers']/@count">10</set>
+	<set xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='resourceForgedSteel']/@count">30</set>
+	<set xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='resourceScrapPolymers']/@count">69</set>
+	<set xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='resourceOil']/@count">7</set>
+	<set xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='motionsensor']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='shotgunTurret']/ingredient[@name='gunShotgunT1DoubleBarrelParts']/@count">7</set>
+	<set xpath="/recipes/recipe[@name='plantedAloe1']/ingredient[@name]/@count">1</set>
+	<set xpath="/recipes/recipe[@name='medicalAloeCream']/ingredient[@name='resourceCropAloeLeaf']/@count">3</set>
+	<append xpath="/recipes">
+		<!-- Craft Acid-->
+		<recipe name="resourceAcid" count="1" craft_time="300" >
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="100"/>
+			<ingredient name="foodRottingFlesh" count="3"/>
+			<ingredient name="resourceScrapLead" count="10"/>
+		</recipe>
+		<recipe name="resourceAcid" count="4" craft_time="4">
+			<ingredient name="drinkJarBoiledWater" count="4"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		<!-- Craft ShotgunSlug Turrent-->
+		<recipe name="shotgunTurretSlug" count="1" tags="perkAdvancedEngineering,learnable"> 
+			<ingredient name="resourceForgedSteel" count="30"/>
+			<ingredient name="resourceScrapPolymers" count="69"/>
+			<ingredient name="resourceOil" count="7"/>
+			<ingredient name="motionsensor" count="1"/>
+			<ingredient name="gunShotgunT1DoubleBarrelParts" count="7"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".56,.56,.56,.34,.15" tags="resourceForgedSteel,gunShotgunT1DoubleBarrelParts,resourceOil,resourceScrapPolymers"/>
+			</effect_group>
+		</recipe>
+		<!-- Craft Solar-->
+		<recipe name="solarCell" count="1" craft_time="90" craft_area="chemistryStation" tags="chemStationCrafting,perkAdvancedEngineering">
+			<ingredient name="resourceBrokenGlass" count="100"/>
+			<ingredient name="resourceElectricParts" count="100"/>
+			<ingredient name="resourceAcid" count="1"/>
+			<ingredient name="resourceScrapLead" count="10"/>
+			<ingredient name="resourceDuctTape" count="4"/>
+		</recipe>
+		<recipe name="solarbank" count="1" craft_time="600" craft_area="workbench" tags="workbenchCrafting,perkAdvancedEngineering">
+			<ingredient name="resourceForgedSteel" count="6"/>
+			<ingredient name="resourceNail" count="20"/>
+			<ingredient name="resourceClayLump" count="100"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceDuctTape" count="4"/>
+		</recipe>
+		<!-- Craft Tacos-->
+		<recipe name="foodBeefTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="1"/>
+			<ingredient name="foodCornMeal" count="2"/>
+		</recipe>
+		<recipe name="foodChickenTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="1"/>
+			<ingredient name="foodCornMeal" count="2"/>
+		</recipe>
+	</append>
+
+</configs>

@@ -1,0 +1,6 @@
+<configs>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitPerDeathPercentage'][@value]/@value">0</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='ExpDeficitMaxPercentage'][@value]/@value">0</set>
+  	<set xpath="/entity_classes/entity_class[@name='DroppedLootContainer']/property[@name='TimeStayAfterDeath']/@value">300</set>
+  	<set xpath="/entity_classes/entity_class[starts-with(@name, 'EntityLootContainer')]/property[@name='TimeStayAfterDeath']/@value">3600</set>
+</configs>

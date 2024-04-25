@@ -1,0 +1,191 @@
+<configs>
+	<append xpath="/items">
+		<item name="foodBeefTacos">
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="food"/>
+			<property name="CustomIcon" value="foodFishTacos"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mplants"/>
+			<property name="Stacknumber" value="10"/> <!-- STK resource -->
+			<property name="EconomicValue" value="92"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="CraftingIngredientTime" value="10"/>
+			<!-- 14 is large round hold -->
+			<property name="UnlockedBy" value="perkMasterChef"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<effect_group tiered="false" name="Food Tier 3">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="26"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		<item name="foodChickenTacos">
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="food"/>
+			<property name="CustomIcon" value="foodFishTacos"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mplants"/>
+			<property name="Stacknumber" value="10"/> <!-- STK resource -->
+			<property name="EconomicValue" value="92"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="CraftingIngredientTime" value="10"/>
+			<!-- 14 is large round hold -->
+			<property name="UnlockedBy" value="perkMasterChef"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<effect_group tiered="false" name="Food Tier 3">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="24"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="13"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="11"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+	</append>
+	<set xpath="/items/item[starts-with(@name, 'food')]/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[starts-with(@name, 'drink')]/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[starts-with(@name, 'ammo')]/property[@name='Stacknumber']/@value">5000</set>
+	<set xpath="/items/item[starts-with(@name, 'medical')]/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[starts-with(@name, 'drug')]/property[@name='Stacknumber']/@value">250</set>								
+	<set xpath="/items/item[starts-with(@name, 'resource')]/property[@name='Stacknumber']/@value">10000</set>
+	<set xpath="/items/item[starts-with(@name, 'ammoGasCan')]/property[@name='Stacknumber']/@value">10000</set>
+	<set xpath="/items/item[@name='partsMaster']/property[@name='Stacknumber']/@value">150</set>
+	<set xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Stacknumber']/@value">150</set>
+	<append xpath="/items/item[@name='gunHandgunT1PistolParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='gunRifleT1HuntingRifleParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='gunBowT1WoodenBowParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='gunBotRoboticsParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<!--<append xpath="/items/item[@name='meleeToolSalvageParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>-->
+	<append xpath="/items/item[@name='meleeToolAllSteelParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='armorMilitarySetParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='armorSteelSetParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolAxeT3ChainsawParts']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<set xpath="//item[starts-with(@name,'foodHoney')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">11</set>
+	<set xpath="//item[starts-with(@name,'foodCanBeef')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">17</set>
+	<set xpath="//item[starts-with(@name,'foodCanChicken')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">16</set>
+	<set xpath="//item[starts-with(@name,'foodCanLamb')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">17</set>
+	<set xpath="//item[starts-with(@name,'foodCanCatfood')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">9</set>
+	<set xpath="//item[starts-with(@name,'foodCanDogfood')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">9</set>
+	<set xpath="//item[starts-with(@name,'foodCanChili')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">18</set>
+	<set xpath="//item[starts-with(@name,'foodCanTuna')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">9</set>
+	<set xpath="//item[starts-with(@name,'foodCanSham')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">18</set>
+	<set xpath="//item[starts-with(@name,'foodCanPasta')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">17</set>
+	<set xpath="//item[starts-with(@name,'foodCanSalmon')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">18</set>
+	<set xpath="//item[starts-with(@name,'foodCanMiso')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">11</set>
+	<set xpath="//item[starts-with(@name,'foodCanPeas')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">12</set>
+	<set xpath="//item[starts-with(@name,'foodCanPears')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">14</set>
+	<set xpath="//item[starts-with(@name,'foodCanSoup')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
+	<set xpath="//item[starts-with(@name,'foodCanStock')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">10</set>
+	<set xpath="//item[starts-with(@name,'foodCornOnTheCob')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
+	<set xpath="//item[starts-with(@name,'foodCornBread')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
+	<set xpath="//item[starts-with(@name,'foodShamSandwich')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">20</set>
+	<set xpath="//item[starts-with(@name,'foodCharredMeat')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">9</set>
+	<set xpath="//item[starts-with(@name,'foodGrilledMeat')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
+	<set xpath="//item[starts-with(@name,'foodBoiledMeat')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">14</set>
+	<set xpath="//item[starts-with(@name,'foodMeatStew')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">56</set>
+	<set xpath="//item[starts-with(@name,'foodSteakAndPotato')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">57</set>
+	<set xpath="//item[starts-with(@name,'foodShamChowder')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">55</set>
+	<set xpath="//item[starts-with(@name,'foodHoboStew')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">54</set>
+	<set xpath="//item[starts-with(@name,'foodFishTacos')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">35</set>
+	<set xpath="//item[starts-with(@name,'foodChiliDog')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">61</set>
+	<set xpath="//item[starts-with(@name,'foodBakedPotato')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">14</set>
+	<set xpath="//item[starts-with(@name,'foodBlueberryPie')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">11</set>
+	<set xpath="//item[starts-with(@name,'foodPumpkinPie')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">61</set>
+	<set xpath="//item[starts-with(@name,'foodPumpkinCheesecake')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">35</set>
+	<set xpath="//item[starts-with(@name,'foodPumpkinBread')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">16</set>
+	<set xpath="//item[starts-with(@name,'foodGumboStew')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">11</set>
+	<set xpath="//item[starts-with(@name,'foodShepardsPie')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">147</set>
+	<set xpath="//item[starts-with(@name,'foodSpaghetti')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">102</set>
+	<set xpath="//item[starts-with(@name,'foodTunaFishGravyToast')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">86</set>
+	<set xpath="//item[starts-with(@name,'foodEggBoiled')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">14</set>
+	<set xpath="//item[starts-with(@name,'foodBaconAndEggs')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">41</set>
+	<set xpath="//item[starts-with(@name,'foodVegetableStew')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">25</set>
+	<set xpath="//item[starts-with(@name,'foodRawMeat')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">2</set>
+	<set xpath="//item[starts-with(@name,'foodRottingFlesh')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">1</set>
+	<set xpath="//item[starts-with(@name,'foodEgg')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">3</set>
+	<set xpath="//item[starts-with(@name,'foodCornMeal')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">2</set>
+	<set xpath="//item[starts-with(@name,'foodCropBlueberries')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">2</set>
+	<set xpath="//item[starts-with(@name,'foodCropCorn')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">2</set>
+	<set xpath="//item[starts-with(@name,'foodCropGraceCorn')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">2</set>
+	<set xpath="//item[starts-with(@name,'foodCropPotato')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">3</set>
+	<set xpath="//item[starts-with(@name,'foodCropMushrooms')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">3</set>
+	<set xpath="//item[starts-with(@name,'foodCropYuccaFruit')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">2</set>
+	<set xpath="//item[starts-with(@name,'foodCropPumpkin')]/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">3</set>
+	<!--<set xpath="/items/item[@name='shotgunTurretSchematic']/property[@name='Unlocks']/@value">shotgunTurret,shotgunTurretSlug</set>
+	<append xpath="/items/item[@name='shotgunTurretSchematic']/effect_group[@tiered='false']">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="shotgunTurretSlug" operation="set" value="1"/>
+	</append>-->
+	<!-- Chainsaw Upgrade -->
+  <set xpath="items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='MaxRange']/@value">3.5</set>
+  <set xpath="items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">20</set>
+  <set xpath="items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">50</set>
+  <set xpath="items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">500</set>
+  <append xpath="items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']">
+    <passive_effect name="HarvestCount" operation="base_set" value=".35" tags="butcherHarvest" />
+  </append>
+
+  <!-- Auger Upgrade-->
+  <set xpath="items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='MaxRange']/@value">3.5</set>
+  <set xpath="items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">50</set>
+  <set xpath="items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">500</set>
+
+  <!-- Nailgun Upgrade -->
+  <set xpath="items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Delay']/@value">0.25</set>
+</configs>

@@ -1,0 +1,11 @@
+<configs>
+    <set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='WildGameForest']/@maxcount">2</set>
+    <set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='WildGameForest']/@maxcount">2</set>
+    <set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='WildGameForest']/@maxcount">2</set>
+    <set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='WildGameForest']/@maxcount">2</set>
+    <set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='EnemyAnimalsForest']/@maxcount">2</set>
+    <set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='EnemyAnimalsBurntForest']/@maxcount">2</set>
+    <set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='EnemyAnimalsDesert']/@maxcount">2</set>
+    <set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWasteland']/@maxcount">2</set>
+    <set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='EnemyAnimalsSnow']/@maxcount">2</set>
+</configs>

@@ -1,0 +1,7 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+foodBeefTacos,items,Food,,,Beef Tacos,,
+foodBeefTacosDesc,items,Food,,,Who wants to live off the land when it's taco Tuesday? Or is this Thursday?,,
+
+foodChickenTacos,items,Food,,,Chicken Tacos,,
+foodChickenTacosDesc,items,Food,,,Who wants to live off the land when it's taco Tuesday? Or is this Thursday?,,

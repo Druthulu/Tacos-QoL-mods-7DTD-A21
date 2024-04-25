@@ -1,0 +1,4 @@
+<configs>
+  <!--<set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">13,13</set>-->
+  <!--<set xpath="/lootcontainers/lootgroup[@name]/item[@name='resourceScrapPolymers']/@count">69</set>-->
+</configs>

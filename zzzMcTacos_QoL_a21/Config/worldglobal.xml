@@ -1,0 +1,3 @@
+<configs>
+	<set xpath="/worldglobal/environment/property[@name='ambientInsideThreshold']/@value">1024</set>
+</configs>

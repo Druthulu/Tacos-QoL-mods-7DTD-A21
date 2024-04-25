@@ -1,4 +1,8 @@
-# Tacos QoL mods 7DTD A21
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="zzzMcTacos_QoL_a21" />
+		<Description value="# Tacos QoL mods 7DTD A21
  Combination of QoL mods for 7DTD, updated for A21
 
 Blocks:
@@ -62,3 +66,8 @@ Menu Window:
 
 Ingame Window:
 	--Increased vehicle storage
+" />
+		<Author value="mctaco" />
+		<Version value="A21" />
+	</ModInfo>
+</xml>
